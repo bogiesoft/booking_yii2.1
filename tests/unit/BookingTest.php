@@ -4,7 +4,7 @@ use app\models\Booking;
 
 class BookingTest extends \Codeception\Test\Unit
 {
-    public function testTourValidation()
+    public function testBookingValidation()
     {
         $booking = new Booking;
         
@@ -33,7 +33,7 @@ class BookingTest extends \Codeception\Test\Unit
         $this->assertTrue($booking->validate(['date_tour']));
     }
     
-    public function testSavingTour()
+    public function testSavingBooking()
     {
         $booking = new Booking;
         
